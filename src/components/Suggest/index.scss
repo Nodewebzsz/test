@@ -1,0 +1,90 @@
+.suggest {
+  height: 100%;
+  background: #fff;
+    .search-go {
+      font-size: 14px;
+      margin-left: 40px;
+      color: rgb(212, 68, 57);
+    }
+    .search-suggest {
+      .title {
+        padding-left: 40px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        color: rgb(212, 68, 57);
+        font-size: 22px;
+      }
+      .search-suggest-item {
+        display: flex;
+        align-items: center;
+        padding: 16px 40px;
+        border-bottom: 2px solid rgb(228, 228, 228);
+        font-size: 28px;
+        image {
+          flex: 0 0 100px;
+          padding-right: 30px;
+        }
+        .text {
+          width: 100%;
+          .text-dec {
+            padding: 6px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .singer {
+            font-size: 24px;
+            color: #2E3030;
+          }
+        }
+      }
+    }
+    .suggest-list {
+
+      padding-bottom: 60px;
+      .suggest-item {
+        display: flex;
+        padding: 6px 40px;
+        height: 100px;
+        align-items: center;
+        border-bottom: 2px solid rgb(228, 228, 228);
+        .song {
+          font-size: 32px;
+          color: #2E3030;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          padding: 6px 0;
+        // padding-bottom: 20px
+        }
+        .singer {
+          font-size: 24px;
+          color: #757575;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          padding: 6px 0;
+        }
+      }
+      .name {
+        flex: 1;
+        font-size: 28px;;
+        color: #2E3030;
+        overflow: hidden;
+        .text {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+      }
+    }
+  }
+  .no-result-wrapper {
+    position: fixed;
+    overflow: hidden;
+    left: 50%;
+    top: 40vh;
+    transform: translatex(-50%);
+    color: #2E3030;
+  }
+

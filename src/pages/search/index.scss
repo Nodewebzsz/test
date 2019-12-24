@@ -1,0 +1,109 @@
+.search {
+    height: 100%;
+    background: #F2F3F4;
+    .search-scroll-wrapper {
+      overflow: hidden;
+      padding-top: 75px;
+      .search-hots {
+        margin: 0 40px;
+        .title {
+          padding: 30px 10px 0 10px;
+          height: 60px;
+          line-height: 60px;
+          font-size: 24px;
+          color: #757575;
+        }
+        .search-hots-item {
+          display: inline-block;
+          padding: 6px 10px;
+          margin: 8px 8px;
+          border: 1.6px solid #c7c7c7;
+          border-radius: 10px;
+          line-height: 40px;
+          color: #2E3030;
+          font-size: 28px;
+        }
+      }
+      .shortcut-wrapper {
+        position: relative;
+        margin: 0 auto;
+        .shortcut {
+          height: 100%;
+          overflow: hidden;
+          .hot-key {
+            margin: 0 40px 40px 40px;
+            .title {
+              margin-bottom: 40px;
+              font-size: 28px;
+              color: #2E3030;
+            }
+            .item {
+              display: inline-block;
+              padding: 10px 20px;
+              margin: 0 40px 20px 0;
+              border-radius: 10px;
+              background: rgb(253, 108, 98);
+              font-size: 28px;
+              color: #2E3030;
+            }
+          }
+        }
+        .search-history {
+          position: relative;
+          margin: 20px 50px;
+          .title {
+            display: flex;
+            align-items: center;
+            height: 60px;
+            font-size: 28px;
+            color: #757575;
+            .text {
+              // font-size: 13px;
+              flex: 1;
+            }
+            .clear {
+              position: relative;
+              &:before {
+                content: '';
+                position: absolute;
+                top: -20px;
+                left: -20px;
+                right: -20px;
+                bottom: -20px;
+              }
+              .icon-clear {
+                font-size: 28px;
+                color: #2E3030;
+              }
+            }
+          }
+          .search-item {
+            line-height: 68px;
+            height: 68px;
+            position: relative;
+            .text {
+              font-size: 26px;
+              color: #2e3030;
+            }
+            .delete {
+              position: absolute;
+              width: 60px;
+              top: 50%;
+              right: -12px;
+              transform: translateY(-50%);
+              text-align: center;
+            }
+          }
+          
+        }
+      }
+      .search-result {
+        position: relative;
+        width: 100%;
+        top: 20px;
+        bottom: 0;
+        background: #F2F3F4;
+      }
+    }
+  }
+  

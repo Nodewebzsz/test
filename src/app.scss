@@ -1,0 +1,62 @@
+@import './base.scss';
+
+page {
+    height: 100%;
+}
+image {
+    width: 100%;
+    height: 100%;
+}
+.line {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+}
+.line2 {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.line3 {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.at-tabs__item--active {
+    color: $primary-color;
+}
+.at-tabs__item-underline {
+    background-color: $primary-color;
+}
+.at-search-bar__action {
+    background-color: #d44439;
+  }
+.circling {
+    animation: circling 20s infinite linear;
+    &.z-pause {
+        animation-play-state: paused;
+    }
+}
+.clear:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+@keyframes circling {
+    0% {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(1turn)
+    }
+}
